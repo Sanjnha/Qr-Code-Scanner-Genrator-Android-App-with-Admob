@@ -1,0 +1,37 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="GenericTextViewStyle" parent="android:Widget.TextView">
+        <item name="android:fontFamily">@font/opensans_regular</item>
+    </style>
+
+    <style name="GenericButtonStyle" parent="android:Widget.Holo.Button">
+        <item name="android:fontFamily">@font/opensans_regular</item>
+    </style>
+
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textViewStyle">@style/GenericTextViewStyle</item>
+        <item name="buttonStyle">@style/GenericButtonStyle</item>
+    </style>
+
+    <style name="AppTheme.Launcher" parent="AppTheme">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="AppTheme.GradientStatusBar" parent="AppTheme">
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowDrawsSystemBarBackgrounds" tools:targetApi="lollipop">true</item>
+        <item name="android:statusBarColor" tools:targetApi="lollipop">@android:color/transparent
+        </item>
+
+        <!--Overridden section-->
+        <item name="listPreferredItemHeightSmall">56dp</item>
+    </style>
+
+</resources>

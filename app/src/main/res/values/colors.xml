@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#00A5F5</color>
+    <color name="colorPrimaryDark">#00A5F5</color>
+    <color name="colorAccent">#00A5F5</color>
+    <color name="colorviolet">#5500BB</color>
+    <color name="colorpurple">#0009bb</color>
+
+    <color name="background">#FAFAFA</color>
+    <color name="textViewBackground">#F4F4F4</color>
+    <color name="bottom_bar_normal">#00B8DB</color>
+    <color name="bottom_bar_selected">#00CBC3</color>
+    <color name="sectionSeparator">#E3E3E3</color>
+
+    <color name="text_subtitle">#8D8D8D</color>
+    <color name="text_regular">#000000</color>
+    <color name="text_hint">#8D8D8D</color>
+
+    <color name="white">#ffffff</color>
+
+    <color name="black">#000000</color>
+
+    <color name="shadow">#d0d8dc</color>
+</resources>
