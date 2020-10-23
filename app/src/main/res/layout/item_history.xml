@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraint_layout_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/image_view_code"
+            android:layout_width="@dimen/width_60"
+            android:layout_height="@dimen/height_60"
+            android:layout_marginStart="@dimen/margin_24"
+            android:layout_marginTop="@dimen/margin_16"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/text_view_code_type"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            app:layout_constraintVertical_chainStyle="packed"
+            tools:src="@drawable/ic_gallery" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/text_view_code_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_16"
+            android:layout_marginEnd="@dimen/margin_32"
+            android:textColor="@color/text_regular"
+            android:textSize="@dimen/text_body"
+            app:layout_constraintBottom_toTopOf="@+id/text_view_time"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/image_view_code"
+            app:layout_constraintTop_toTopOf="@+id/image_view_code"
+            app:layout_constraintVertical_chainStyle="packed"
+            tools:text="QR Code Scan" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/text_view_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_16"
+            android:layout_marginEnd="@dimen/margin_32"
+            android:textColor="@color/text_subtitle"
+            android:textSize="@dimen/text_smaller_body"
+            app:layout_constraintBottom_toBottomOf="@+id/image_view_code"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/image_view_code"
+            app:layout_constraintTop_toBottomOf="@+id/text_view_code_type"
+            tools:text="5:45 PM, 3 December, 2018" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="@dimen/height_1"
+            android:layout_marginStart="@dimen/margin_16"
+            android:layout_marginTop="@dimen/margin_16"
+            android:layout_marginEnd="@dimen/margin_16"
+            android:background="@color/sectionSeparator"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/image_view_code" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
