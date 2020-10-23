@@ -19,7 +19,7 @@
   - Admob Integration : Intertistial and Banner Ads
   - Scan History 
 
-### How to use 
+### How to Edit the app : 
   - Change the Package Name 
   - Change the Admob id's with your own in values.xml
   
